@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static',filename='index.css') }}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="center" id="vrchnitext">
+        Rock Paper Scissors something game i guess    
+    </p>
+    <div id="roundedshit" >
+        <div class="center" id="userinput">
+            <p class="lineup" id="textstyl">
+                {{userinput}}
+            </p>
+        </div>
+        <div class="center" class="hover">
+            <form action="/gaykarol" method="post">
+                <button type="submit" value="rock" name="button" class="button">Rock</button>
+                <button type="submit" value="scissors" name="button" class="button">Scissors</button>
+                <button type="submit" value="paper" name="button" class="button">Paper</button>
+            </form>
+        </div>
+    </div>
+    <button class="button" id="backbutt" onclick="window.location.href='/'">Back</button>
+</body>
+</html>
